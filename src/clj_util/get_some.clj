@@ -5,6 +5,6 @@
   non-nil value in a given map, otherwise nil."
   [m & ks]
   (loop [ks ks]
-    (when-not (empty? ks)
+    (when (seq ks)
       (or (get m (first ks))
           (recur (rest ks))))))
