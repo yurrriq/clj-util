@@ -1,5 +1,5 @@
 (ns clj-util.nwhen-let
-  (:require [clojure.algo.monads :refer [domonad maybe-m with-monad]]))
+  (:require [clojure.algo.monads :refer [domonad maybe-m]]))
 
 (defmacro nwhen-let
   "Similar to when-let, but allows multiple bindings."
